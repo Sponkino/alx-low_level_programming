@@ -7,7 +7,7 @@
 int main(void)
 {
 	int i;
-	void print_alphabet();
+	void print_alphabet(void);
 
 	for (i = 'a'; i <= 'z'; i++)
 	{

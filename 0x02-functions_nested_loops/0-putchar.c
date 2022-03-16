@@ -5,14 +5,17 @@
 * Return: Always (Success)
 */
 int main(void)
-{
-	char *ch = "_putchar";
+{	
+	int i;
 
-	while (*ch)
+	char msg[9] = "_putchar";
+
+	for (i = 0; i < 8; i++)
 	{
-		_putchar(*ch);
-		ch++;
+		_putchar(msg[i]);
+	
 	}
 	_putchar('\n');
-return (0);
+
+	return (0);
 }

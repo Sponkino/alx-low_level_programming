@@ -7,7 +7,6 @@
 int main(void)
 {	
 	int i;
-
 	char msg[9] = "_putchar";
 
 	for (i = 0; i < 8; i++)
@@ -16,6 +15,5 @@ int main(void)
 	
 	}
 	_putchar('\n');
-
 	return (0);
 }

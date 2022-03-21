@@ -2,10 +2,9 @@
 #include <stdio.h>
 
 /**
- * main: takes a void
- * @0-reset_to_98 - takes value and updates value
+ * reset_to_98 - takes pointer to a parameter and updates its value.
  * @n: number to reset number
- * return: no return
+ * Return: no return
  */
 
 void reset_to_98(int *n)

@@ -3,7 +3,7 @@
 
 /**
  * main: takes a void
- * @reset_to_98 - takes value and updates value
+ * @0-reset_to_98 - takes value and updates value
  * @n: number to reset number
  * return: no return
  */

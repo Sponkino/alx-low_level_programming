@@ -8,8 +8,11 @@
  * Return: no return.
  */
 
-void swap_int(int *a, int *b)
+void swap_int()
 {
+	int a, b;
+	int *a, *b;
+
 	*a = &b;
 	*b = &a;
 

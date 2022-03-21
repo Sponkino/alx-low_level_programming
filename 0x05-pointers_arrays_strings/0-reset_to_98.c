@@ -3,13 +3,12 @@
 
 /**
  * main: takes value and update to 98
- * @n: number to reset
+ * @n: number to reset number
  * @p: is a pointer that takes a number.
  */
 
-int main(void)
+void reset_to_98(int n)
 {
-	int n;
 	int *p = &n;
 
 	*p = 98;

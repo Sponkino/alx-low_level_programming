@@ -4,11 +4,9 @@
 
 /**
  * _strcmp - this function compares two strings
- * overwriting the null terminate (\0) of dest.
  * @s1: string to compare
  * @s2: string to compare
- * @output: stores result of comparison.
- * Return: Returns output return
+ * Return: Returns output
  */
 
 int _strcmp(char *s1, char *s2)

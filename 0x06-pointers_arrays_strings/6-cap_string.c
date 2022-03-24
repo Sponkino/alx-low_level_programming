@@ -23,7 +23,19 @@ char *cap_string(char *str)
 					str[i] -= 32;
 				}
 			}
-		else if(str[i - 1] == ' ')
+		else if(str[i - 1] == ' ' ||
+				str[i - 1] == '\t' ||
+				str[i - 1] == '\n' ||
+				str[i - 1] == ',' ||
+				str[i - 1] == ';' ||
+				str[i - 1] == '.' ||
+				str[i - 1] == '!' ||
+				str[i - 1] == '?' ||
+				str[i - 1] == '"' ||
+				str[i - 1] == '(' ||
+				str[i - 1] == ')' ||
+				str[i- 1] == '{' ||
+				str[i - 1] == '}')
 			{
 				if(str[i] >= 97 && str[i] <= 122)
 				{

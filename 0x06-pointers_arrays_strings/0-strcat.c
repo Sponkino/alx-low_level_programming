@@ -3,10 +3,11 @@
 #include <string.h>
 
 /**
- * strcat - concantates 2 strings
- * @*dest, pointer to a string
- * @*src: pointer to a string
- * Return: no return.
+ * _strcat - this function appends two strings together
+ * overwriting the null terminate (\0) of dest.
+ * @dest: destination string to append to.
+ * @src: string to append.
+ * Return: Dest pointer.
  */
 
 char *_strcat(char *dest, char *src)

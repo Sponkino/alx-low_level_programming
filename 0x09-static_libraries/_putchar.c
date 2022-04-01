@@ -1,30 +1,18 @@
 #include "main.h"
-
 /**
- * print_diagonal - check for a digit
- * @n : number of \\ to be printed
- * Return:void
- */
-
-void print_diagonal(int n)
+* main - Entry point
+* write a program tha prints _putchar, followed by a new line.
+* Return: Always (Success)
+*/
+int main(void)
 {
+	int i;
+	char msg[9] = "_putchar";
 
-	int i = 0, ii;
-
-	while (i < n && n > 0)
+	for (i = 0; i < 8; i++)
 	{
-		ii = 0;
-		while (ii < i)
-		{
-			_putchar(' ');
-			ii++;
-		}
-
-		_putchar('\\');
-		_putchar('\n');
-		i++;
+		_putchar(msg[i]);
 	}
-	if (i == 0)
-		_putchar('\n');
-
+	_putchar('\n');
+	return (0);
 }

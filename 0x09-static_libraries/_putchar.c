@@ -1,18 +1,13 @@
-#include "main.h"
-/**
-* main - Entry point
-* write a program tha prints _putchar, followed by a new line.
-* Return: Always (Success)
-*/
-int main(void)
-{
-	int i;
-	char msg[9] = "_putchar";
+#include <unistd.h>
 
-	for (i = 0; i < 8; i++)
-	{
-		_putchar(msg[i]);
-	}
-	_putchar('\n');
-	return (0);
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }

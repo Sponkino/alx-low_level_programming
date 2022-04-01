@@ -1,19 +1,23 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 
 /**
- * _strncat - this function appends two strings together
- * overwriting the null terminate (\0) of dest.
- * @dest: destination string to append to.
- * @src: string to append.
- * @n: determines the available space in dest
- * Return: Dest pointer.
+ * _strncat - concatenate two strings
+ * @dest: string
+ * @src: string
+ * @n: number of elements to concatenate in
+ * Return: pointer to resulting `dest`
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	strncat(dest, src, n);
+	int i, c;
 
+	for (i = 0; dest[i] != '\0'; i++)
+		;
+
+	for (c = 0; src[c] != '\0' && n > 0; c++, n--, i++)
+	{
+		dest[i] = src[c];
+	}
 	return (dest);
 }

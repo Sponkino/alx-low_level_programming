@@ -5,13 +5,16 @@
  * @argv: array of pointers to arguement strings
  * Return: 0
  **/
+
 int main(int argc, char *argv[])
 {
-	int i;
+	int i = 0;
 
-	for (i = 1;  i < argc; i++)
+	argv = argv;
+
+	if (i < argc)
 		{
 		printf("%d\n", argc);
 		}
-return (0);
+	return (0);
 }

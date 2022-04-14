@@ -4,8 +4,6 @@
 /**
  * sum_them_all - a function that sums numbers parsed to it
  * @n: unsigned int to positive number of numbers
- * @sum: adds 2 positive numbers
- * @j: an number parsed that is part of n
  *
  * Return: sum
  */

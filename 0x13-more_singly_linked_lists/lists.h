@@ -2,6 +2,8 @@
 #define MAIN_H
 
 #include <stdlib.h>
+#include <stddef.h>
+
 /**
  * struct listint_s - singly linked list
  * @n: integer

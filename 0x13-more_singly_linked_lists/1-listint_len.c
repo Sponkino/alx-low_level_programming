@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "lists.h"
 
 /**
@@ -12,13 +10,11 @@
 size_t listint_len(const listint_t *h)
 {
 	size_t count = 0;
-	listint_t const *ptr;
 
-	ptr = h;
-	while (ptr != NULL)
+	while (h != NULL)
 		{
 		count++;
-		ptr = ptr->next;
+		h = h ->next;
 		}
 
 return (count);
